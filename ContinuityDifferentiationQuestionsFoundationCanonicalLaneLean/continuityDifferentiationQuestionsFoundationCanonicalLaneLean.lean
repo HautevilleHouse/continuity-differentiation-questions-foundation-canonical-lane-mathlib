@@ -1,0 +1,9 @@
+import CanonicalLaneMathlibCore
+
+namespace HautevilleHouse
+namespace ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean
+
+open HautevilleHouse.CanonicalLaneMathlibCore
+
+end ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean
+end HautevilleHouse

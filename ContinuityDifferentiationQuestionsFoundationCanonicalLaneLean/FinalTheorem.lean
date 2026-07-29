@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean.ContinuityDifferentiation
+import ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean.IntermediateValueTheorem
+import ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean.MeanValueTheorem
+
+namespace HautevilleHouse
+namespace ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean
+
+def ConstrainedContinuityDifferentiationClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_continuity_differentiation_endgame (A : AdmissibleClass) :
+    ConstrainedContinuityDifferentiationClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end ContinuityDifferentiationQuestionsFoundationCanonicalLaneLean
+end HautevilleHouse
